@@ -4,7 +4,7 @@ const digitsContainer = document.getElementById("digits-container");
 
 // You can replace these with any code snippets, numbers, or symbols
 const digitsOrCode = [
-  "0", "1", "2", "3", "4", "5",
+  "0", "1",
   "SQL", "ETL", "AI", "9", "BI",
   "42", "DBT", "ADF", "Azure", "∑", "π", "∞",
   "256", "4096", "137", "108", "27", "432000", "1.618", "3.1416", "e", "7", "12"
