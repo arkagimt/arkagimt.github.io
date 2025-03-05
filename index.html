@@ -1,59 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arka Ghosh Portfolio</title>
-  <!-- Google Font for a futuristic look -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arka Ghosh | Bhagba Futuristic Portfolio</title>
+
+  <!-- Shiva-inspired Devanagari Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Arka Ghosh</h1>
-    <p>Data Engineer | Technology Lead | Innovator</p>
-  </header>
-
-  <nav>
+  <!-- NAVIGATION -->
+  <nav class="navbar">
     <ul>
+      <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#resume">Resume</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
+  <!-- HERO SECTION with swirling saffron background & animated digits -->
+  <header id="home" class="hero">
+    <!-- Saffron swirl overlay -->
+    <div class="saffron-overlay"></div>
+
+    <!-- Container for floating digits/code -->
+    <div id="digits-container"></div>
+
+    <!-- Hero content -->
+    <div class="hero-content">
+      <h1 class="gradient-text">Arka Ghosh</h1>
+      <p class="subtitle">
+        Data Engineer | Technology Lead | Innovator
+      </p>
+      <div class="hero-buttons">
+        <a href="#about" class="btn-primary">Learn More</a>
+        <a href="resume/Arka-Ghosh-Resume.pdf" target="_blank" class="btn-secondary">
+          Download Resume
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
   <main>
-    <section id="about">
-      <div class="card">
-        <h2>About Me</h2>
-        <p>I am an experienced Data Engineer with expertise in Snowflake, Azure, DBT & SQL. I lead teams and build cutting-edge data solutions that drive decision-making.</p>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section-container">
+      <h2>About Me</h2>
+      <p>
+        I am an experienced Data Engineer with expertise in Snowflake, Azure, DBT & SQL.
+        I lead teams and build cutting-edge data solutions that drive decision-making.
+        Over the years, I've honed my skills in designing scalable data pipelines, 
+        orchestrating ETL workflows, and implementing real-time analytics solutions.
+        <br /><br />
+        My journey began with bridging OT (Operational Technology) and IT infrastructures,
+        which gave me a holistic perspective on how data flows from the plant floor to 
+        the executive dashboard. Today, I combine that hands-on approach with a deep 
+        understanding of modern cloud data platforms.
+      </p>
+    </section>
+
+    <!-- RESUME SECTION -->
+    <section id="resume" class="section-container">
+      <h2>Resume</h2>
+      <p>
+        For a detailed breakdown of my professional experience, including 
+        roles at Infosys Limited, MSH India, and Power Mech Projects Limited,
+        please download my resume below:
+      </p>
+      <a
+        href="resume/Arka-Ghosh-Resume.pdf"
+        target="_blank"
+        class="btn-primary"
+      >
+        View/Download Resume
+      </a>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section-container">
+      <h2>Projects</h2>
+      <p>
+        I have led and contributed to numerous data-centric projects, including:
+      </p>
+      <ul class="projects-list">
+        <li>
+          <strong>Snowflake Data Warehouse & Reporting (Infosys):</strong>
+          Onboarding Oracle ERP data into Snowflake, near real-time data integration,
+          and 29 Power BI reports for actionable insights.
+        </li>
+        <li>
+          <strong>ServiceMax Data Warehousing (MSH India):</strong>
+          Building cross-domain reporting on Salesforce data hosted on Snowflake
+          with DBT transformations and IICS orchestration.
+        </li>
+        <li>
+          <strong>Cloud Data Engineering (Power Mech Projects):</strong>
+          Automating data ingestion with Snowpipe & DBT, implementing advanced
+          transformations, and optimizing query performance for large-scale
+          analytics.
+        </li>
+      </ul>
+    </section>
+
+    <!-- SKILLS SECTION with logos -->
+    <section id="skills" class="section-container">
+      <h2>Skills & Technologies</h2>
+      <p>
+        A blend of cloud platforms, data engineering tools, and scripting languages
+        that form my core expertise.
+      </p>
+      <div class="logo-grid">
+        <div class="logo-item">
+          <img src="assets/images/snowflake.png" alt="Snowflake Logo" />
+          <span>Snowflake</span>
+        </div>
+        <div class="logo-item">
+          <img src="assets/images/matillion.png" alt="Matillion Logo" />
+          <span>Matillion</span>
+        </div>
+        <div class="logo-item">
+          <img src="assets/images/azure.png" alt="Azure Logo" />
+          <span>Azure</span>
+        </div>
+        <div class="logo-item">
+          <img src="assets/images/powerbi.png" alt="Power BI Logo" />
+          <span>Power BI</span>
+        </div>
+        <div class="logo-item">
+          <img src="assets/images/python.png" alt="Python Logo" />
+          <span>Python</span>
+        </div>
+        <div class="logo-item">
+          <img src="assets/images/sql.png" alt="SQL Logo" />
+          <span>SQL</span>
+        </div>
+        <div class="logo-item">
+          <img src="assets/images/ai.png" alt="Generative AI Logo" />
+          <span>Generative AI</span>
+        </div>
       </div>
     </section>
 
-    <section id="resume">
-      <div class="card">
-        <h2>Resume</h2>
-        <p>For detailed information on my professional experience and projects, <a href="resume/Arka-Ghosh-Resume.pdf" target="_blank">download my resume</a>.</p>
-      </div>
-    </section>
-
-    <section id="projects">
-      <div class="card">
-        <h2>Projects</h2>
-        <p>Showcasing my work on various projects including data warehousing with Snowflake, real-time reporting, and ETL pipeline optimizations.</p>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="card">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:arkagimt@gmail.com">arkagimt@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/arka-ghosh-767827a9/" target="_blank">View my profile</a></p>
-      </div>
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section-container">
+      <h2>Contact</h2>
+      <p>
+        Interested in collaborating or learning more about my work?
+        Feel free to reach out:
+      </p>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:arkagimt@gmail.com">arkagimt@gmail.com</a>
+      </p>
+      <p>
+        <strong>LinkedIn:</strong>
+        <a
+          href="https://www.linkedin.com/in/arka-ghosh-767827a9/"
+          target="_blank"
+        >
+          https://www.linkedin.com/in/arka-ghosh-767827a9/
+        </a>
+      </p>
     </section>
   </main>
 
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      &copy; 2025 Arka Ghosh. All rights reserved. 
+      <br />
+      Proudly powered by a cosmic swirl of saffron and code.
+    </p>
+  </footer>
+
+  <!-- JavaScript for floating digits/code snippets -->
   <script src="assets/js/script.js"></script>
 </body>
 </html>
